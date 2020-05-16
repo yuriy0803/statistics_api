@@ -1,7 +1,7 @@
-import Ember from 'ember';
+import EmberRouter from '@ember/routing/router';
 import config from './config/environment';
 
-var Router = Ember.Router.extend({
+var Router = EmberRouter.extend({
   location: config.locationType
 });
 
@@ -26,7 +26,7 @@ Router.map(function() {
   this.route('miners');
   this.route('exchange');
   this.route('about');
-   this.route('helpdesk', { path: 'http://helpdesk.miningpoolindia.com' });
+  this.route('helpdesk', { path: 'http://helpdesk.miningpoolindia.com' });
 });
 
 export default Router;
