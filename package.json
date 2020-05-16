@@ -51,8 +51,8 @@
     "@babel/polyfill": "7.8.7",
     "core-js": "3",
     "eslint-plugin-ember": "^5.0.0",
-    "ember-cli-bootstrap3-popover": "2.0.0-rc.1"
     "ember-cli-accounting": "2.0.2",
+    "ember-cli-bootstrap3-popover": "2.0.0-rc.1"
     "loader.js": "^4.2.3"
   },
   "engines": {
