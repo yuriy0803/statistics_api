@@ -40,6 +40,7 @@
     "ember-welcome-page": "^3.0.0",
     "ember-truth-helpers":"2.1.0",
     "ember-cli-test-loader": "3.0.0",
+    "ember-cli-jshint": "2.0.1",
     "broccoli-asset-rev": "3.0.0",
     "ember-cli-release": "1.0.0-beta.2",
     "ember-cli-bootstrap3-popover": "2.0.0-rc.1"
