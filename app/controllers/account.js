@@ -1,15 +1,17 @@
-import Ember from 'ember';
+import Controller from '@ember/controller';
+import { inject } from '@ember/controller';
+import { computed } from '@ember/object';
 import config from '../config/environment';
 
-export default Ember.Controller.extend({
-  applicationController: Ember.inject.controller('application'),
-  stats: Ember.computed.reads('applicationController.model.stats'),
-  config: Ember.computed.reads('applicationController.config'),
+export default Controller.extend({
+  applicationController: inject('application'),
+  stats: computed.reads('applicationController.model.stats'),
+  config: computed.reads('applicationController.config'),
 
   
-  roundPercent: Ember.computed('stats', 'model', {
+    roundPercent: computed('stats', 'model', {
     get() {
-      var percent = this.get('model.roundShares') / this.get('stats.nShares');
+      let percent = this.get('model.roundShares') / this.get('stats.roundShares');
       if (!percent) {
         return 0;
       }
@@ -22,7 +24,7 @@ export default Ember.Controller.extend({
   }),
   
   
-  payoutthreshold: Ember.computed('model', {
+  payoutthreshold: computed('model', {
     get() {
       var defaultThreshold = config.APP.PayoutThreshold;
       var threshold = this.getWithDefault('model.stats.payoutthreshold',defaultThreshold);
@@ -31,7 +33,7 @@ export default Ember.Controller.extend({
   }),
   
   
-  paymentPercent: Ember.computed('model',{
+  paymentPercent: computed('model',{
     get() {
       var defaultThreshold = config.APP.PayoutThreshold;
       defaultThreshold =defaultThreshold * 1000000000;
