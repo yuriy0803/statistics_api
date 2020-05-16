@@ -42,7 +42,7 @@
     "ember-cli-test-loader": "3.0.0",
     "broccoli-asset-rev": "3.0.0",
     "ember-cli-release": "1.0.0-beta.2",
-    "ember-cli-bootstrap3-popover":"2.0.0-rc.1"
+    "ember-cli-bootstrap3-popover": "2.0.0-rc.1"
     "ember-cli-jshint": "2.0.1",
     "@babel/core": "^7.0.0-beta.42",
     "babel-plugin-debug-macros": "0.2.0-beta.6",
