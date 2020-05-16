@@ -1,7 +1,7 @@
-/* jshint node: true */
+'use strict';
 
 module.exports = function (environment) {
-    var ENV = {
+    let ENV = {
         modulePrefix: 'open-ethereum-pool',
         environment: environment,
         rootURL: '/',
@@ -15,24 +15,21 @@ module.exports = function (environment) {
 
         APP: {
             // API host and port
-            ApiUrl: '//eth.daggerpool.com/',
+            ApiUrl: '//192.168.0.200/',
 
             // HTTP mining endpoint
-            HttpHost: 'http://eth-us01.daggerpool.com',
-            HttpPort: 40001,
+            HttpHost: '192.168.0.200',
+            HttpPort: 8888,
 
             // Stratum mining endpoint
-            StratumHost: 'eth-us01.daggerpool.com',
-            StratumPort: 40011,
+            StratumHost: '192.168.0.200',
+            StratumPort: 8008,
 
-            StratumHost1: 'eth-uk01.daggerpool.com',
-            StratumPort1: 40011,
-
-            NicehashHost: 'eth-nh.daggerpool.com',
-            NicehashPost: 40021,
+            NicehashHost: '192.168.0.200',
+            NicehashPost: 8089,
 
             // Fee and payout details
-            PoolFee: '0.99%',
+            PoolFee: '0%',
             PayoutThreshold: '0.01',
             ShareDifficulty: '4000000000',
 
@@ -43,7 +40,7 @@ module.exports = function (environment) {
             PaymentText: 'every 2 hours',
             SupportMail: 'helpdesk@daggerpool.com',
             SupportHelpdesk: 'http://helpdesk.daggerpool.com',
-            WebsiteName: 'eth.daggerpool.com',
+            WebsiteName: '192.168.0.200',
 
             //Coin Bases Settings
             ChainAddress : 'https://etherscan.io/address/',
