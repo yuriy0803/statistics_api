@@ -1,4 +1,4 @@
-import Ember from 'ember';
+import { helper as buildHelper } from '@ember/component/helper';
 
 
 export function formatTxCharges(value) {
@@ -6,4 +6,4 @@ export function formatTxCharges(value) {
 	return value.toFixed(8);
 }
 
-export default Ember.Helper.helper(formatTxCharges);
+export default buildHelper(formatTxCharges);
