@@ -1,4 +1,4 @@
-import Ember from 'ember';
+import { helper as buildHelper } from '@ember/component/helper';
 
 export function formatEthInr(params) {
 	let value = params[0];       
@@ -13,5 +13,5 @@ export function formatEthInr(params) {
 	return "₹" + inr.toFixed(2);
 }
 
-export default Ember.Helper.helper(formatEthInr);
+export default buildHelper(formatEthInr);
 
