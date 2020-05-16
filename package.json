@@ -45,9 +45,9 @@
     "babel-plugin-debug-macros": "0.2.0-beta.6",
     "broccoli-asset-rev": "3.0.0",
     "ember-cli-release": "1.0.0-beta.2",
-    "ember-cli-bootstrap3-popover": "2.0.0-rc.1"
     "lodash.padstart": "4.6.1",
     "lodash.padend": "4.6.1",
+    "ember-cli-bootstrap3-popover": "2.0.0-rc.1"
     "@babel/polyfill": "7.8.7",
     "core-js": "3",
     "minimatch": "3.0.3",
