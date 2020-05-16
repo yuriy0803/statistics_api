@@ -42,7 +42,6 @@
     "ember-cli-jshint": "2.0.1",
     "@babel/core": "^7.0.0-beta.42",
     "babel-plugin-debug-macros": "0.2.0-beta.6",
-    "broccoli-asset-rev": "3.0.0",
     "ember-cli-release": "1.0.0-beta.2",
     "lodash.padstart": "4.6.1",
     "lodash.padend": "4.6.1",
