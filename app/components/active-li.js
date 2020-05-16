@@ -2,7 +2,6 @@ import { getOwner } from '@ember/application';
 import Component from '@ember/component';
 import { computed } from '@ember/object';
 
-
 export default Component.extend({
   tagName: 'li',
   classNameBindings: ['isActive:active:inactive'],
@@ -16,4 +15,3 @@ export default Component.extend({
     return this.get('router').isActive(currentWhen);
   })
 });
-
