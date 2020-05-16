@@ -47,8 +47,8 @@
     "ember-cli-release": "1.0.0-beta.2",
     "lodash.padstart": "4.6.1",
     "lodash.padend": "4.6.1",
-    "ember-cli-bootstrap3-popover": "2.0.0-rc.1"
     "@babel/polyfill": "7.8.7",
+    "ember-cli-bootstrap3-popover": "2.0.0-rc.1"
     "core-js": "3",
     "minimatch": "3.0.3",
     "eslint-plugin-ember": "^5.0.0",
